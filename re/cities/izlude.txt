@@ -86,7 +86,7 @@ prt_fild08d,350,219,4	duplicate(Guard_izlude)	Guard#izlude_d	8W_SOLDIER
 //============================================================
 function	script	F_IzludeChannel	{
 	mes "[Channel Warp Official]";
-	mes "Izlude is a verly lively place is it not?";
+	mes "¿No es Izlude un gran lugar para vivir?";
 	mes "I am here to help make Izlude feel more smooth!";
 	mes "I can send you to another copy of Izlude.";
 	mes "Do you want to go to another copy?";
