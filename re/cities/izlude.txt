@@ -87,11 +87,11 @@ prt_fild08d,350,219,4	duplicate(Guard_izlude)	Guard#izlude_d	8W_SOLDIER
 function	script	F_IzludeChannel	{
 	mes "[Channel Warp Official]";
 	mes "¿No es Izlude un gran lugar para vivir?";
-	mes "I am here to help make Izlude feel more smooth!";
-	mes "I can send you to another copy of Izlude.";
-	mes "Do you want to go to another copy?";
+	mes "¡Estoy aquí para ayudar a que Izlude se sienta más suave!";
+	mes "Te puedo enviar a una copia de la ciudad de Izlude.";
+	mes "¿Deseas visitar esa copia?";
 	next;
-	set .@i, select(getarg(0)+":Never mind");
+	set .@i, select(getarg(0)+":No, olvidalo");
 	if (.@i < 6) {
 		setarray .@maps$[1],"izlude","izlude_a","izlude_b","izlude_c","izlude_d";
 		savepoint .@maps$[.@i],128,98,1,1;
