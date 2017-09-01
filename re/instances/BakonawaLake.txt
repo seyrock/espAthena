@@ -21,7 +21,7 @@
 ma_scene01,174,179,4	script	Taho	541,{
 	disable_items;
 	if (checkweight(1201,1) == 0) {
-		mes "You are carrying too many items. Come back after taking off some of them.";
+		mes "Estas portando demasiados items. Libera un poco de espacio.";
 		close;
 	}
 	if (MaxWeight - Weight < 10000) {
