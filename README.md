@@ -1,2 +1,2 @@
 # eAthena
-rAthena is an open-source cross-platform MMORPG server. https://rathena.org/board/
+eAthena es un proyecto de traducción al español basado en su emulador original rAthena. https://rathena.org/board/
