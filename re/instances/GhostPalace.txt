@@ -5,21 +5,22 @@
 //= Ghost Palace Instance
 //===== Changelogs: ==========================================
 //= 1.0 First version. [Capuche]
+//= 1.2 Traducción Español. [Fiction]
 //============================================================
 
 dali02,43,129,5	script	Unpleasant Royal Guard#	4_M_SAKRAYROYAL,{
 	if (BaseLevel < 120) {
 		mes "[Unpleasant Royal Guard]";
-		mes "Althought I need help with a task, you are not strong enough to assist me, noob~!";
+		mes "Aunque necesito ayuda con una tarea, no eres lo suficientemente fuerte para ayudarme, noob~!";
 		next;
 		mes "[Unpleasant Royal Guard]";
-		mes "Come back later when you have done some training and are at least level 120!";
+		mes "Vuelve más tarde cuando hayas hecho algún tipo de entrenamiento y al menos seas nivel 120!";
 		close;
 	}
 	.@party_id = getcharid(1);
 	if (getcharid(0) != getpartyleader(.@party_id,2) || .@party_id < 1) {
 		mes "[Unpleasant Royal Guard]";
-		mes "I can only open the secret passage for party leaders. Please have your party leader talk to me.";
+		mes "Sólo puedo abrir el pasaje secreto para los líderes del grupo, por favor, hágame hablar con su líder del grupo.";
 		close;
 	}
 	switch( checkquest(1261,PLAYTIME) ) {
