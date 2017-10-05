@@ -11,7 +11,7 @@
 dali02,43,129,5	script	Unpleasant Royal Guard#	4_M_SAKRAYROYAL,{
 	if (BaseLevel < 120) {
 		mes "[Unpleasant Royal Guard]";
-		mes "Aunque necesito ayuda con una tarea, no eres lo suficientemente fuerte para ayudarme, noob~!";
+		mes "Aunque necesito ayuda con una tarea, no eres lo suficientemente fuerte para ayudarme, noob~!.";
 		next;
 		mes "[Unpleasant Royal Guard]";
 		mes "Vuelve más tarde cuando hayas hecho algún tipo de entrenamiento y al menos seas nivel 120!";
