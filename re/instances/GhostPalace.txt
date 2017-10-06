@@ -29,19 +29,19 @@ dali02,43,129,5	script	Unpleasant Royal Guard#	4_M_SAKRAYROYAL,{
 	case 0:
 	case 1:
 		mes "[Unpleasant Royal Guard]";
-		mes "Have you found the princess yet?! Is she safe?";
+		mes "¿Has encontrado a la princesa ?! ¿Está a salvo?";
 		close;
 	case 2:
 		mes "[Unpleasant Royal Guard]";
-		mes "The monsters around the secret passage have disappeared. Now is our chance to save the princess!";
+		mes "Los monstruos alrededor del pasaje secreto han desaparecido. ¡Ahora es nuestra oportunidad de salvar a la princesa!";
 		erasequest 1261;// Cursed Swordman
 		close;
 	}
 	mes "[Unpleasant Royal Guard]";
-	mes "I need help, even from the likes of you.";
+	mes "Necesito ayuda, incluso de personas como tú.";
 	next;
 	mes "[Unpleasant Royal Guard]";
-	mes "In the middle of battle the princess disappeared while I was guarding the palace.";
+	mes "La princesa desapareció en medio de la batalla, mientras yo vigilaba el palacio.";
 	next;
 	mes "[Unpleasant Royal Guard]";
 	mes "You run ahead and I will catch up. We must save her.";
