@@ -29,7 +29,7 @@ dali02,43,129,5	script	Unpleasant Royal Guard#	4_M_SAKRAYROYAL,{
 	case 0:
 	case 1:
 		mes "[Unpleasant Royal Guard]";
-		mes "Have you found the princess yet?! Is she safe?";
+		mes "¿Has encontrado a la princesa ?! ¿Está a salvo?";
 		close;
 	case 2:
 		mes "[Unpleasant Royal Guard]";
