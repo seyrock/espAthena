@@ -46,7 +46,7 @@ dali02,43,129,5	script	Unpleasant Royal Guard#	4_M_SAKRAYROYAL,{
 	mes "[Unpleasant Royal Guard]";
 	mes "You run ahead and I will catch up. We must save her.";
 	next;
-	if (select( "I will help.", "This is not a good time." ) == 2) {
+	if (select( "Voy a ayudar.", "No es un buen momento." ) == 2) {
 		mes "[Unpleasant Royal Guard]";
 		mes "Even now all the royal guards are fighting and dying from the monsters.";
 		next;
@@ -56,25 +56,25 @@ dali02,43,129,5	script	Unpleasant Royal Guard#	4_M_SAKRAYROYAL,{
 	}
 	instance_create("Ghost Palace");
 	mes "[Unpleasant Royal Guard]";
-	mes "Thank you..";
-	mes "I will open the secret passage to the ^0000ffGhost Palace^000000.";
-	mes "Please be ready!";
+	mes "Gracias..";
+	mes "IAbriré el pasaje secreto al ^0000ffGhost Palace^000000.";
+	mes "¡Prepárate!";
 	close;
 }
 
 dali02,40,134,5	script	Interdimensional Device#dk	PORTAL,{
 	if (BaseLevel < 120) {
 		mes "[Unpleasant Royal Guard]";
-		mes "Althought I need help with a task, you are not strong enough to assist me, noob~!";
+		mes "Aunque necesito ayuda con una tarea, no eres lo suficientemente fuerte como para ayudarme, novato ~!";
 		next;
 		mes "[Unpleasant Royal Guard]";
-		mes "Come back later when you have done some training and are at least level 120!";
+		mes "¡Regresa más tarde cuando hayas entrenado y tengas al menos el nivel 120!";
 		close;
 	}
 	mes "[Unpleasant Royal Guard]";
-	mes "I can see the secret passage into the palace. Are you ready to save the princess?!";
+	mes "Puedo ver el pasaje secreto en el palacio. ¿Estás listo para salvar a la princesa?";
 	next;
-	if (select( "Enter", "Stop" ) == 2) {
+	if (select( "Entrar", "Un momento" ) == 2) {
 		mes "[Unpleasant Royal Guard]";
 		mes "Even now all the royal guards are fighting and dying from the monsters.";
 		next;
@@ -88,10 +88,10 @@ dali02,40,134,5	script	Interdimensional Device#dk	PORTAL,{
 	case 0:
 	case 1:
 		mes "[Unpleasant Royal Guard]";
-		mes "The monsters that attacked the palace are wandering around the secret entrance. It would be very bad if they spotted us... Please wait.";
+		mes "Los monstruos que atacaron el palacio deambulan por la entrada secreta. Sería muy malo si nos vieran ... Espera un momento..";
 		next;
 		mes "When the time limit for the entrance is up";
-		mes "let's try to re-enter.";
+		mes "Intentemos volver a ingresar.";
 		close;
 	case 2:
 		mes "^0000ffThe time limit for entering to the Curse of the Swordsman is finished. Please try to talk to the Unpleasent Royal Guard again..^000000";
@@ -101,7 +101,7 @@ dali02,40,134,5	script	Interdimensional Device#dk	PORTAL,{
 	.@party_id = getcharid(1);
 	if (getcharid(0) != getpartyleader(.@party_id,2) || .@party_id < 1) {
 		mes "[Unpleasant Royal Guard]";
-		mes "I can only open the secret passage for party leaders. Please have your party leader talk to me.";
+		mes "Solo puedo abrir el pasaje secreto para los líderes del partido. Por favor, dígale a su lider de grupo que hable conmigo.";
 		close;
 	}
 
