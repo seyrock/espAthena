@@ -101,7 +101,7 @@ dali02,40,134,5	script	Interdimensional Device#dk	PORTAL,{
 	.@party_id = getcharid(1);
 	if (getcharid(0) != getpartyleader(.@party_id,2) || .@party_id < 1) {
 		mes "[Unpleasant Royal Guard]";
-		mes "Solo puedo abrir el pasaje secreto para los líderes del partido. Por favor, dígale a su lider de grupo que hable conmigo.";
+		mes "Solo puedo abrir el pasaje secreto para el lider del grupo. Por favor, dígale a su lider de grupo que hable conmigo.";
 		close;
 	}
 
